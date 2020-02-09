@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World in React JS Without using JSX</title>
+
+  <!-- Importing React Core & React Dom -->
+  <!-- <script src="js/react_core.js"></script>
+  <script src="js/react_dom.js"></script> -->
+
+  <!-- NOTE: We can also use a remote script of React Core and React Dom. -->
+  <!-- NOTE: During production, change "development.js" to "production.min.js" -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+
+  <div id="content"></div>
+
+  <!-- NOTE: Script that using to generate HTML elements should has type of (type="text/javascript") -->
+  <!-- <script type="text/javascript">
+    let Header = React.createElement('h1', null, 'Hello World');
+
+    ReactDOM.render(
+      Header,
+      document.getElementById("content")
+    )
+  </script> -->
+
+  <!-- NOTE: This is alternative of render script using external script file. -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
